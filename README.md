@@ -1,36 +1,96 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# What's Left? ��
 
-## Getting Started
+A web application that helps you find recipes based on ingredients you have. Built with Next.js, TypeScript, and TailwindCSS.
 
-First, run the development server:
+## Features 🌟
 
+- Search recipes by available ingredients
+- Filter recipes by category (Beef, Chicken, Dessert, etc.)
+- Sort by completion percentage or alphabetically
+- Favorite recipes are saved locally
+- Dark mode UI
+- Responsive design
+- Print-friendly recipe view
+
+## Getting Started 🚀
+
+### Prerequisites
+- Node.js 18 or later
+- npm
+
+### Installation
+
+1. Clone the repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/yourusername/whats-left.git
+cd whats-left
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Run the development server
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-## Learn More
+### Building for Production
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run build
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The static site will be generated in the `out` directory.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Tech Stack 💻
 
-## Deploy on Vercel
+- [Next.js](https://nextjs.org/) - React framework
+- [TypeScript](https://www.typescriptlang.org/) - Type safety
+- [TailwindCSS](https://tailwindcss.com/) - Styling
+- [TheMealDB API](https://www.themealdb.com/api.php) - Recipe data
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Project Structure 📁
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+src/
+├── app/                    # Next.js app router pages
+├── components/            # React components
+│   ├── IngredientInput.tsx  # Ingredient search and input
+│   ├── RecipeList.tsx      # Recipe display and filtering
+│   └── RecipeModal.tsx     # Detailed recipe view
+├── data/
+│   └── commonIngredients.ts # Predefined ingredient lists
+├── services/
+│   └── mealDbService.ts    # API integration with TheMealDB
+└── utils/                 # Utility functions
+```
+
+## Deployment 🚀
+
+This project is configured for GitHub Pages deployment. The static site is automatically built and deployed when pushing to the main branch.
+
+To deploy manually:
+
+1. Push your changes to GitHub
+```bash
+git add .
+git commit -m "Your commit message"
+git push
+```
+
+2. GitHub Actions will automatically:
+   - Build the project
+   - Deploy to GitHub Pages
+   - Make it available at: https://yourusername.github.io/whats-left
+
+## Contributing 🤝
+
+Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
+
+## License 📝
+
+[MIT](https://choosealicense.com/licenses/mit/)
