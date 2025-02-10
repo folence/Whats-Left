@@ -22,7 +22,7 @@ A web application that helps you find recipes based on ingredients you have. Bui
 
 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/whats-left.git
+git clone https://github.com/folence/Whats-Left.git
 cd whats-left
 ```
 
@@ -85,7 +85,7 @@ git push
 2. GitHub Actions will automatically:
    - Build the project
    - Deploy to GitHub Pages
-   - Make it available at: https://yourusername.github.io/whats-left
+   - Make it available at: https://folence.github.io/Whats-Left
 
 ## Contributing 🤝
 

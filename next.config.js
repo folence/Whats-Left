@@ -4,8 +4,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: '/whats-left', // Must match your repository name exactly
-  assetPrefix: '/whats-left/', // Must match your repository name exactly
+  basePath: '/Whats-Left',  // Note the capital 'L'
+  assetPrefix: '/Whats-Left/',  // Note the capital 'L'
   trailingSlash: true,
 }
 
