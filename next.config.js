@@ -4,8 +4,9 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: '/whats-left', // Replace with your repo name
-  assetPrefix: '/whats-left/', // Replace with your repo name
+  basePath: '/whats-left', // Must match your repository name exactly
+  assetPrefix: '/whats-left/', // Must match your repository name exactly
+  trailingSlash: true,
 }
 
 module.exports = nextConfig 
