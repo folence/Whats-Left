@@ -1,4 +1,4 @@
-# What's Left? ��
+# What's Left?
 
 A web application that helps you find recipes based on ingredients you have. Built with Next.js, TypeScript, and TailwindCSS.
 
