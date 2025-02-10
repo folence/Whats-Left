@@ -12,40 +12,6 @@ A web application that helps you find recipes based on ingredients you have. Bui
 - Responsive design
 - Print-friendly recipe view
 
-## Getting Started 🚀
-
-### Prerequisites
-- Node.js 18 or later
-- npm
-
-### Installation
-
-1. Clone the repository
-```bash
-git clone https://github.com/folence/Whats-Left.git
-cd whats-left
-```
-
-2. Install dependencies
-```bash
-npm install
-```
-
-3. Run the development server
-```bash
-npm run dev
-```
-
-4. Open [http://localhost:3000](http://localhost:3000) in your browser
-
-### Building for Production
-
-```bash
-npm run build
-```
-
-The static site will be generated in the `out` directory.
-
 ## Tech Stack 💻
 
 - [Next.js](https://nextjs.org/) - React framework
@@ -68,29 +34,3 @@ src/
 │   └── mealDbService.ts    # API integration with TheMealDB
 └── utils/                 # Utility functions
 ```
-
-## Deployment 🚀
-
-This project is configured for GitHub Pages deployment. The static site is automatically built and deployed when pushing to the main branch.
-
-To deploy manually:
-
-1. Push your changes to GitHub
-```bash
-git add .
-git commit -m "Your commit message"
-git push
-```
-
-2. GitHub Actions will automatically:
-   - Build the project
-   - Deploy to GitHub Pages
-   - Make it available at: https://folence.github.io/Whats-Left
-
-## Contributing 🤝
-
-Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
-
-## License 📝
-
-[MIT](https://choosealicense.com/licenses/mit/)
